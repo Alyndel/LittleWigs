@@ -42,7 +42,7 @@ mod:SetAuraData({
 	{1222484, soundOnApplied = "underyou", note = CL.debuffUnderYouNote}, -- Poison Pool
 	{1263971, duration = 5, dispel = "poison", note = CL.debuffUnderYouNote}, -- Mind-Numbing Poison
 	{1222692, note = CL.debuffGroupAfterCastNote:format(mod:SpellName(1262497))}, -- Toxic Aura
-	{1283506, soundOnApplied = "warning", CL.debuffTargetedNote:format(mod:SpellName(1283506))}, -- Fixate (doesn't work due to a Blizzard bug)
+	{1283506, soundOnApplied = "warning", note = CL.debuffTargetedNote:format(mod:SpellName(1283506))}, -- Fixate (doesn't work due to a Blizzard bug)
 	{1282892, duration = 300, soundOnApplied = "alarm", soundOnAppliedDose = "alarm", note = CL.debuffFailureMoveFromCastNote:format(mod:SpellName(1283506))}, -- Sickening Bite
 })
 
