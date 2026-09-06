@@ -285,7 +285,7 @@ end
 
 if mod:Retail() then -- Midnight+
 	mod:SetAuraData({
-		{270003, header = 133935, duration = 2.5, mechanic = "stunned", note = CL.debuffFailureMoveFromCastNote:format(mod:SpellName(270003))}, -- Suppression Slam (Animated Guardian)
+		{270003, header = 133935, duration = 2.5, note = CL.debuffFailureMoveFromCastNote:format(mod:SpellName(270003))}, -- Suppression Slam (Animated Guardian)
 		{269936, header = 133943, duration = 10, note = CL.debuffTargetedNote:format(mod:SpellName(269936))}, -- Fixate (Minion of Zul)
 		{276031, duration = 6, dispel = "magic", mechanic = "fleeing", note = CL.debuffFailureMoveFromCastNote:format(mod:SpellName(269936))}, -- Pit of Despair (Minion of Zul)
 		{269972, header = 134174, duration = 12, dispel = "curse", note = CL.debuffFailureInterruptNote:format(mod:SpellName(269972))}, -- Hex Volley (Risen Hexer)
