@@ -108,7 +108,7 @@ do
 	end
 
 	function mod:UNIT_SPELLCAST(event, unit, _, spellID, castBarID)
-		local level = BigWigsLoader.UnitLevel(unit)
+		local level = self:UnitLevel(unit)
 		local isLieutenant = level == LIEUTENANT_LEVEL or level == BOSS_LEVEL or level == QUESTION_LEVEL
 		local unitFilterOption = ResolveUnitFilter(self, isLieutenant)
 		if unitFilterOption == UNIT_FILTER_TARGET_ONLY then -- target only
