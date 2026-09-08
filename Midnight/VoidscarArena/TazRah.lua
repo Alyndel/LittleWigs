@@ -34,8 +34,8 @@ mod:SetRenames({
 --
 
 mod:SetAuraData({
-	{1222103, duration = 15, note = CL.debuffGroupAfterCastNote:format(mod:SpellName(1222098))}, -- Nether Dash
-	{1296967, soundOnApplied = "underyou", note = CL.debuffUnderYouNote}, -- Void Fissure
+	{1222103, duration = 15, tip = CL.debuffGroupAfterCastNote:format(mod:SpellName(1222098))}, -- Nether Dash
+	{1296967, soundOnApplied = "underyou", tip = CL.debuffUnderYouNote}, -- Void Fissure
 })
 
 --------------------------------------------------------------------------------
