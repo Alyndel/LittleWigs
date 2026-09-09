@@ -192,9 +192,10 @@ function mod:EchoingMaulTimeline(eventInfo) -- Echoing Maul
 	return {
 		msg = barText,
 		key = 1242860,
-		callback = function()
-			self:Error("Echoing Maul now has a callback")
-		end,
+		--callback = function()
+			-- there is sometimes a callback but it's late
+			--self:Error("Echoing Maul now has a callback")
+		--end,
 		cancelCallback = function()
 			if timer then
 				self:CancelTimer(timer)
