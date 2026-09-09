@@ -88,7 +88,7 @@ if mod:Retail() then -- Midnight+
 		{385518, duration = 4.5, tip = CL.debuffTargetedNote:format(mod:SpellName(1307308))}, -- Chillstorm
 		{397077, tip = CL.debuffGroupAfterCastNote:format(mod:SpellName(1307308))}, -- Chillstorm
 		{372963, tip = CL.debuffUnderYouNote}, -- Storm's Eye
-		{373688, duration = 3, soundOnAppliedDose = "none", tip = CL.debuffGroupAfterCastNote:format(mod:SpellName(373686))}, -- Frost Overload
+		{373688, duration = 3, soundOnAppliedDose = "none", difficulty = "mythic", tip = CL.debuffGroupAfterCastNote:format(mod:SpellName(373686))}, -- Frost Overload
 		{384024, duration = 20, soundOnApplied = "warning", tip = CL.debuffHitByCastNote:format(mod:SpellName(1307297))}, -- Hailbombs
 	})
 end
