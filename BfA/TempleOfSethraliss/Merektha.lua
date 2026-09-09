@@ -85,7 +85,7 @@ end
 if mod:Retail() then -- Midnight+
 	mod:SetAuraData({
 		{1308838, duration = 7, tip = CL.debuffTankAfterCastNote:format(mod:SpellName(1290797))}, -- Lightning Bite
-		{1290030, duration = 4, tip = CL.debuffTargetedNote:format(mod:SpellName(1290030))}, -- A Knot of Snakes
+		{1290030, duration = 4, difficulty = "mythic", tip = CL.debuffTargetedNote:format(mod:SpellName(1290030))}, -- A Knot of Snakes
 		{1289109, duration = 3.5, tip = CL.debuffTargetedNote:format(mod:SpellName(1289109))}, -- Thunder Spit
 		{1289588, duration = 4, tip = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1289109))}, -- Thunder Spit
 		{1289589, soundOnApplied = "underyou", tip = CL.debuffUnderYouNote}, -- Lingering Storm
