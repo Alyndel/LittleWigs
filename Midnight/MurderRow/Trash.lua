@@ -23,6 +23,14 @@ mod:SetDefaultLocale({
 local lastText
 
 --------------------------------------------------------------------------------
+-- Renames
+--
+
+mod:SetRenames({
+	[1218508] = {1218508}, -- Disguised
+})
+
+--------------------------------------------------------------------------------
 -- Auras
 --
 
@@ -50,6 +58,7 @@ function mod:GetOptions()
 	return {
 		autotalk,
 		"snitches_interrogated",
+		1218508, -- Disguised
 	}
 end
 
@@ -71,9 +80,11 @@ end
 
 function mod:GOSSIP_SHOW()
 	if self:GetOption(autotalk) then
-		if self:GetGossipID(131567) then -- Disguise (Belath Dawnblade)
+		if self:GetGossipID(131567) then -- Get disguise (Belath Dawnblade)
 			-- 131567:I'm ready for my disguise.
 			self:SelectGossipID(131567)
+			self:PersonalMessage(1218508) -- Disguised
+			self:PlaySound(1218508, "info") -- Disguised
 		elseif self:GetGossipID(131502) then -- Clock in (Selenar Sunshy)
 			-- 131502:<Clock in.>
 			self:SelectGossipID(131502)
