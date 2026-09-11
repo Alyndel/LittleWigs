@@ -165,9 +165,10 @@ do
 		return {
 			msg = barText,
 			key = 1222098,
-			callback = function()
-				self:Error("Nether Dash now has a callback")
-			end,
+			--callback = function()
+				-- does not consistently have a callback
+				--self:Error("Nether Dash now has a callback")
+			--end,
 			cancelCallback = function()
 				if timer then
 					self:CancelTimer(timer)
