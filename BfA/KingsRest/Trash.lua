@@ -296,6 +296,8 @@ if mod:Retail() then -- Midnight+
 		{270927, header = 137474, duration = 6, tip = CL.debuffTargetedNote:format(mod:SpellName(270927))}, -- Bladestorm (King Timalji)
 		{270292, header = 134739, soundOnApplied = "underyou", tip = CL.debuffUnderYouNote}, -- Purifying Flame (Purification Construct)
 		{271555, header = 137969, duration = 30, tip = CL.debuffPossibleAfterCastNote:format(mod:SpellName(271555))}, -- Entomb (Interment Construct)
+		{267763, header = 270502, duration = 12, dispel = "disease", tip = CL.debuffFailureInterruptNote:format(mod:SpellName(267763))}, -- Wretched Discharge (Half-Finished Mummy)
+		{1298104, header = 137989, duration = 12, dispel = "poison", tip = CL.debuffFailureMoveFromCastNote:format(mod:SpellName(1298104))}, -- Putrid Seekers (Embalming Fluid)
 		{1301851, header = 135167, duration = 12, dispel = "bleed", mechanic = "bleeding", soundOnAppliedDose = "none", tip = CL.debuffPossibleAfterCastNote:format(mod:SpellName(1301851))}, -- Bloodthirsty Axe (Royal Berserker)
 		{270492, header = 135204, duration = 5, dispel = "curse", mechanic = "polymorphed", tip = CL.debuffFailureInterruptNote:format(mod:SpellName(270492))}, -- Hex (Phantom Hex Priest)
 		{1302028, header = 135231, duration = 15, soundOnAppliedDose = "none", tip = CL.debuffTankAfterCastNote:format(mod:SpellName(1302028))}, -- Soul Crush (Ghostly Brute)
